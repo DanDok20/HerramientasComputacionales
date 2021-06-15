@@ -11,9 +11,13 @@ Convertir los grados celsius a fahrenheit = grados celsius * 9 / 5 + 32
 Mostrar resultado
 """
 
+def Fahrenheit(Celsius):
+    Fahrenheit = Celsius * (9 / 5) + 32
+    return Fahrenheit
+
 Celsius = eval(input("Introducir grados celsius "))
 
-Convertir_a_Fahrenheit = Celsius * (9 / 5) + 32
+F = Fahrenheit(Celsius)
 
-print("En grados Fahrenheit son:", Convertir_a_Fahrenheit)
+print("La conversion a grados Fahrenheit equivale a: ", F)
 

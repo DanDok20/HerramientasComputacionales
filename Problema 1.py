@@ -17,20 +17,14 @@ Mostrar resultado = 750
 
 #Algoritmo
 
-Altura = 30
-
-Base = 50
-
-Area = (Altura * Base) / 2
-
-print("El area del triangulo es:", Area ,"cm")
-
-#Algoritmo general
+def AreaTriangulo(Altura,Base):
+    Area = (Altura * Base) / 2
+    return (Area)
 
 Altura = eval(input("Digita la altura del triangulo "))
-
 Base = eval(input("Digita la base del triangulo "))
 
-Area = (Altura * Base) / 2
+A = AreaTriangulo(Altura,Base)
 
-print("El area del triangulo es:", Area ,"cm")
+print("El area del triangulo es: ", A)
+
