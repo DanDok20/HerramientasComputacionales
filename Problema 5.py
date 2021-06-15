@@ -17,20 +17,22 @@ Mostrar el cambio de la moneda
 """
 
 #Algoritmo
-
 Pesos = eval(input("Ingresa los pesos que quieres cambiar: "))
 Cambio_de_Moneda = input("Ingrese a que moneda quiere cambiar (Dolares, Yenes o Euros): ").upper
 
-Dolares = (Pesos * 0.00028) * 0.92
-Yenes = (Pesos * 0.029) * 0.92
-Euros = (Pesos * 0.00023) * 0.92
-
 if Cambio_de_Moneda == "DOLARES":
     
+    Dolares = (Pesos * 0.00028) * 0.98
+
     print ("El cambio a doleres es: ", Dolares)
+    
 elif Cambio_de_Moneda == "YENES":
+    
+    Yenes = (Pesos * 0.029) * 0.98
     
     print ("El cambio a yenes s es: ", Yenes)
     
 else:
+    Euros = (Pesos * 0.00023) * 0.98
+    
     print ("El cambio a euros es: ", Euros)
